@@ -4,11 +4,11 @@
     <title>About</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-    <script type="module" src="script/script.js" defer></script>
+    <script type="module" src="../script/script.js" defer></script>
 </head>
   <body>
     <nav>
@@ -21,7 +21,7 @@
                 alt="logo"
               />
             </li>
-            <li><h2>Pandieño Bookstore</h2></li>
+            <li><a href="../index.php"><h2>Pandieño Bookstore</h2></a></li>
           </ul>
         </div>
         <div class="right-nav">
@@ -33,7 +33,7 @@
                 class="search-bar"
               />
             </li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
           </ul>
         </div>
       </div>
@@ -72,7 +72,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and sanitize input values
-    $username_email = htmlspecialchars(trim($_POST['username-email']));
+    $email = htmlspecialchars(trim($_POST['email']));
     $password = htmlspecialchars(trim($_POST['password']));
     $confirm_password = htmlspecialchars(trim($_POST['confirm-password']));
 
@@ -81,13 +81,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Here, you can process the data (e.g., save to a database)
         
         // Redirect to a new page (e.g., success.php)
-        header("Location: php/usersignup.php");
+        header("Location: ../php/usersignup.php");
         exit; // Always use exit after header redirection to stop further script execution
     } else {
-        echo "Passwords do not match.";
+      echo '<script>alert("Passwords do not match.")</script>';
     }
 } else {
     // Redirect or show an error if the request method is not POST
-    echo "Invalid request method.";
+    echo '<script>alert("Invalid request method.")</script>';
 }
 ?>
