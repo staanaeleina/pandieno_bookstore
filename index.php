@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/mainpage.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script/script.js"></script>
   </head>
 <body>
   <nav>
