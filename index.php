@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/mainpage.css" />
-    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/script.js" defer></script>
   </head>
 <body>
   <nav>
@@ -24,7 +24,7 @@
               <li class="cart">
                 <img src="cart-icon.png" alt="cart">
                 <span class="cart-count">2</span>
-                <a href="#">Log in</a> | <a href="#">Sign up</a>
+                <a href="#">Log in</a> | <a href="php/signup.php">Sign up</a>
             </ul>
       </div>
     </div>
