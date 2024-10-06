@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/item_page.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="left-nav">
+          <ul>
+            <li><img src="logo.png" alt="logo"></li>
+            <li><h2>Pandieño Bookstore</h2></li>
+            <li><h3>|&nbsp Item Page</h3></li>
+          </ul>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li>
+                  <input type="text" placeholder="Search item..." class="search-bar">
+                </li>
+                <li class="cart">
+                  <img src="cart-icon.png" alt="cart">
+                  <span class="cart-count">2</span>
+                </li>
+                <li>
+                  <a href="#">Log in</a> | <a href="#">Sign up</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="book-detail">
+        <div class="book-image">
+          <img src="book-cover.jpg" alt="La Promesse Du Dragon">
+        </div>
+        <div class="book-info">
+          <h2>LA PROMESSE DU DRAGON</h2>
+          <p class="author">By ELIZABETH LIM</p>
+          <p class="publish-date">Publication Date: Jun 14, 2022</p>
+          <p class="price">₱ 260</p>
+          <p class="description">A captivating fantasy tale that draws readers into a world full of dragons and adventure...</p>
+          <div class="stock">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1" max="50">
+            <span>50 pieces available</span>
+          </div>
+          <div class="buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+          </div>
+          <div class="ratings">
+            <p>Ratings: 5/5 ★</p>
+            <a href="#">Reviews</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bookstore-info">
+        <div class="store-logo">
+          <img src="logo.png" alt="Pandieño Bookstore Logo">
+        </div>
+        <div class="store-details">
+          <h3>Pandieño Bookstore</h3>
+          <a href="about.html" class="view-shop">View Shop</a>
+        </div>
+      </section>
+
+      <section class="related-books">
+        <div class="book-grid">
+          <div class="book-item">
+            <img src="related-book1.jpg" alt="Anya and the Nightingale">
+            <p>Anya and the Nightingale</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+          <div class="book-item">
+            <img src="related-book2.jpg" alt="La Promesse Du Dragon">
+            <p>La Promesse Du Dragon</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
