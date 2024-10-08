@@ -1,0 +1,311 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color2);
+    background-color: var(--color8);
+}
+
+nav {
+    width: 100%;
+    background-color: var(--color4);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav ul, 
+.right-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-nav img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.left-nav h2{
+    color: var(--color2);
+}
+.left-nav h3 {
+    margin: 0;
+    color: var(--color1);
+}
+
+.right-nav .search-bar {
+    padding: 5px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid var(--color2);
+    margin-right: 20px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart img {
+    width: 30px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px;
+}
+
+.delivery-address,
+.products-ordered,
+.payment-method {
+    background-color: var(--color6);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.address-header {
+    font-size: 1.2rem;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+}
+
+.address-header img {
+    margin-right: 10px;
+}
+
+.address-details {
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px;
+    width: 100%; 
+}
+
+.address-info {
+    flex: 1;  /* Allow the address information to take available space */
+    text-align: left;  /* Align address text to the left */
+}
+
+.change-address {
+    color: var(--color2);  /* Set color for the change link */
+    text-decoration: underline;  /* Underline the link */
+    cursor: pointer;  /* Pointer cursor for hover */
+    margin-left: 20px; 
+    
+}
+
+.address-change {
+    color: var(--color2);  /* Set color for the change link */
+    text-decoration: underline;  /* Underline the link */
+    cursor: pointer;  /* Pointer cursor for hover */
+    margin-left: 20px; 
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+.products-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: var(--color2);
+}
+
+.product-details {
+    gap: 2rem;
+    background-color: var(--color6);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: var(--color6);
+    border-radius: 5px;
+}
+
+.product-item img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.product-info {
+    display: flex; /* Distributes space evenly between items */
+    align-items: left; /* Centers items vertically */
+    margin-top: 10px; /* Optional: add space above the row */
+    justify-content: space-between;
+}
+
+.product-info p {
+    margin: 0;
+    flex: 1; 
+}
+
+.product-info .delivery {
+    flex: 1;  /* Allow delivery text to take available space */
+    text-align: left;  /* Align delivery text to the left */
+}
+
+.product-info div {
+    margin-left: 15px;
+}
+
+.product-prices {
+    display: flex;  /* Use flexbox for the price items */
+    gap: 20px;  /* Space between each price item */
+    flex: 1;  /* Allow this section to take remaining space */
+    justify-content: flex-end;  /* Align items to the right */
+}
+
+.product-prices p {
+    margin: 0;  /* Remove default margin */
+    text-align: right;  /* Align text to the right */
+}
+
+.payment-method {
+    background-color: var(--color6);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.payment-header {
+    padding: 10px;
+    color: var(--color2);
+    width: 100%;
+}
+
+.payment-details {
+    width: 100%;
+    max-width: 300px; 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.payment-summary {
+    text-align: right;
+    display: flex-end;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto; /* Push the summary to the right */
+    max-width: 300px;
+    align-items: flex-end;
+}
+
+.payment-summary p {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    margin: 0;
+    font-size: 1rem;
+}
+
+.payment-summary p.delivery {
+    color: var(--color2); 
+}
+
+
+
+.payment-summary p.Merchandise {
+    color: var(--color1); 
+}
+
+.payment-summary p.Shipping {
+    color: var(--color1); 
+}
+
+.payment-summary p.total {
+    font-size: 1.2rem; 
+    color: var(--color2);
+}
+
+.payment-summary span {
+    color: var(--color1); 
+    text-align: right; 
+    min-width: 100px;
+}
+
+.payment-summary .prize {
+    color: var(--color2);
+    font-size: 1.5rem;
+
+}
+
+
+.total {
+    font-size: 1.2rem;
+}
+
+.checkout-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--color3);
+    color: white;
+    cursor: pointer;
+    align-self: flex-end; 
+    border: none;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    background-color: var(--color2);
+}
+
+.products-header a.view-shop {
+    color: var(--color2);
+    text-decoration: none;
+  }
+.line{
+    color: black;
+}
+
+:root {
+    --color1: #fac883;
+    --color2: #d9912b;
+    --color3: #966115;
+    --color4: #5b3701;
+    --color5: #573501;
+    --color6: #3d2501;
+    --color7: #492c00;
+    --color8: #231200;
+}
