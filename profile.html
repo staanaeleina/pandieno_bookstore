@@ -13,8 +13,8 @@
         <div class="left-nav">
           <ul>
             <li><img src="logo.png" alt="logo"></li>
-            <li><h2>Pandieño Bookstore</h2></li>
-            <li><h3>|&nbsp Profile</h3></li>
+            <li><h2>Pandieño Bookstore&nbsp&nbsp</h2></li>
+            <li><h3>|&nbsp&nbspProfile</h3></li>
           </ul>
         </div>
         <div class="right-nav">
@@ -24,18 +24,23 @@
                 </li>
                 <li class="cart">
                   <img src="cart-icon.png" alt="cart">
-                  <span class="cart-count">2</span>
+                  <span class="cart-count">0</span>
                 </li>
                 <li>
-                  <a href="#">Log in</a> | <a href="#">Sign up</a>
+                  | <a href="#">Log In</a>
                 </li>
               </ul>
         </div>
       </div>
     </nav>
     <main>
+      <section class="profile-burger">
+        <h3>My&nbspAccount</h3>
+        <a href="#" class="change-address">Profile</a>
+        <a href="#" class="change-address">Address</i></a>
+      </section>
         <section class="profile-section">
-            <h1>My Profile</h1>
+            <h1>My&nbspProfile</h1>
             <form>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username"><br><br>
@@ -46,32 +51,26 @@
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone"><br><br>
                 <label for="gender">Gender:</label>
-                <div>
-                    <label>
-                        <input type="radio" id="male" name="gender" value="male">
-                        Male
-                    </label><br>
-                
-                    <label>
-                        <input type="radio" id="female" name="gender" value="female">
-                        Female
-                    </label><br>
-                
-                    <label>
-                        <input type="radio" id="other" name="gender" value="other">
-                        Other
-                    </label>
+                <div class="radio-group">
+                  <label>
+                      <input type="radio" name="option" value="1"> Female
+                  </label>
+                  <label>
+                      <input type="radio" name="option" value="2"> Male
+                  </label>
+                  <label>
+                      <input type="radio" name="option" value="3"> Other
+                  </label>
                 </div>
+              
                 
                 <label for="date-of-birth">Date of Birth:</label>
                 <input type="date" id="date-of-birth" name="date-of-birth"><br><br>
                 <input type="submit" value="Save">
             </form>
-        </section>
-        <section class="image-section">
-            <h2>Select Image</h2>
+            <label for="image" class="file-label">Select Image</label>
             <input type="file" id="image" name="image">
-        </section>
+          </section>
     </main>
     <footer>
         <p>&copy; 2024 Pandiemo Bookstore. All Rights Reserved.</p>
