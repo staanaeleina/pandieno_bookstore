@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="left-nav">
+                <ul>
+                    <li><img src="logo.png" alt="logo"></li>
+                    <li><h2>Pandieño Bookstore&nbsp&nbsp</h2></li>
+                    <li><h3>|&nbsp&nbspProfile</h3></li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Search item..." class="search-bar">
+                    </li>
+                    <li class="cart">
+                        <img src="cart-icon.png" alt="cart">
+                        <span class="cart-count">0</span>
+                    </li>
+                    <li>
+                        | <a href="#">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="profile-burger">
+            <h3>My&nbspAccount</h3>
+            <a href="#" class="change-address">Profile</a>
+            <a href="#" class="change-address">Address</a>
+        </section>
+        <section class="profile-section">
+            <h1>My&nbspProfile</h1>
+            <form class="form-container">
+                <p><strong>Username:</strong></p>
+                <p><strong>Name:</strong></p>
+                <p><strong>Email:</strong></p>
+                <p><strong>Phone Number:</strong></p>
+                <p><strong>Gender:</strong></p>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="option" value="1"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="2"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="3"> Other
+                    </label>
+                </div>
+                <p><strong>Date of Birth:</strong></p>
+                <input type="date" id="date-of-birth" name="date-of-birth"><br><br>
+                <input type="submit" value="Save">
+            </form>
+            <div class="image-upload-section">
+                <div class="image-section">
+                    <img id="profile-image" src="default-profile.png" alt="Profile Image" />
+                </div>
+                <label for="image" class="file-label">Select Image</label>
+                <input type="file" id="image" name="image">
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pandiemo Bookstore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
